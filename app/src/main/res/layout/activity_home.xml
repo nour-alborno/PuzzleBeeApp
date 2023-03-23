@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.HomeActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp"
+    android:background="@color/orange">
+
+
+<com.google.android.material.button.MaterialButton
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_70sdp"
+    android:id="@+id/BtnStart"
+    app:strokeColor="#131313"
+    app:strokeWidth="@dimen/_3sdp"
+    android:textColor="@color/black"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    android:text="@string/start"
+    app:elevation="@dimen/_3sdp"
+    android:textSize="@dimen/_25ssp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:id="@+id/BtnSettings"
+        app:strokeColor="#131313"
+        app:strokeWidth="@dimen/_3sdp"
+        android:textColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
+        android:text="@string/Settings"
+        android:textSize="@dimen/_25ssp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:id="@+id/BtnExit"
+        app:strokeColor="#131313"
+        app:strokeWidth="@dimen/_3sdp"
+        android:textColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="@string/Logout"
+        android:textSize="@dimen/_25ssp"/>
+
+
+</LinearLayout>

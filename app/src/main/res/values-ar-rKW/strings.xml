@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PuzzleBeeApp</string>
+
+
+
+    <string name="Puzzles">ألغاز</string>
+    <string name="start" >ابدأ</string>
+    <string name="Logout">خروج</string>
+    <string name="Settings">الاعدادات</string>
+    <string name="FullName">الاسم</string>
+    <string name="Email">البريد الالكتروني</string>
+    <string name="SelectBirthdate">حدد تاريخ ميلادك</string>
+    <string name="Male">ذكر</string>
+    <string name="Female">أنثى</string>
+    <string name="Save">حفظ</string>
+    <string name="skip">تخطي</string>
+    <string name="numValue">0</string>
+    <string name="level">مرحلة :</string>
+    <string name="score">نقاط :</string>
+    <string name="puzzle">الالغاز :</string>
+    <string name="sounds">أصوات</string>
+    <string name="notification">اشعارات</string>
+    <string name="profile">ملف شخصي</string>
+    <string name="new_play">لعبة جيدة</string>
+    <string name="True">صح</string>
+    <string name="False">خطأ</string>
+    <string name="EnterTheAnswer">أدخل الاجابة</string>
+    <string name="Check">تحقق</string>
+    <string name="Edit">تعديل</string>
+    <string name="PointsNeeded">النقاط المتبقية</string>
+    <string name="Rate">التقييم :</string>
+    <string name="Music">المسيقى</string>
+    <string name="turnon">Turn on</string>
+    <string name="turnoff">Turn off</string>
+
+
+    <string-array name="Country">
+        <item>فلسطين</item>
+        <item>مصر</item>
+        <item>السودان</item>
+        <item>السعودية</item>
+        <item>تونس</item>
+        <item>الصومال</item>
+        <item>الجزائر</item>
+        <item>المغرب</item>
+        <item>العراق</item>
+        <item>سوريا</item>
+        <item>اليمن</item>
+        <item>ليبيا</item>
+        <item>الاردن</item>
+        <item>لبنان</item>
+        <item>الامارات</item>
+        <item>كويت</item>
+        <item>قطر</item>
+    </string-array>
+</resources>

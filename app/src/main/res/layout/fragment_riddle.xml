@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RiddleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/FLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TvTimer"
+          app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="0:0"
+            android:textSize="@dimen/_20ssp"
+            android:layout_margin="@dimen/_20sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/TvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+
+            android:text="Question"
+            android:textSize="@dimen/_25ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+           android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TvQuestion"
+
+            >
+
+            <RadioButton
+                android:id="@+id/RadioAns1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice one"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
+                android:id="@+id/RadioAns2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice two"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
+                android:id="@+id/RadioAns3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice three"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
+                android:id="@+id/RadioAns4"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice four"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/BtnTrue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="True"
+            app:layout_constraintEnd_toEndOf="@id/BtnFalse"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/TvQuestion"
+            android:backgroundTint="@color/orange"/>
+
+        <Button
+            android:backgroundTint="@color/orange"
+            android:id="@+id/BtnFalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="False"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/BtnTrue"
+            app:layout_constraintTop_toBottomOf="@id/TvQuestion" />
+
+        <EditText
+            android:id="@+id/ETSpace"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TvQuestion" />
+
+        <Button
+            android:id="@+id/BtnCheckAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Check Answer"
+            android:backgroundTint="@color/orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ETSpace" />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

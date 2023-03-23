@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">PuzzleBeeApp</string>
+
+    <string name="Puzzles">Puzzles</string>
+    <string name="start">Start</string>
+    <string name="Logout">Logout</string>
+    <string name="Settings">Settings</string>
+    <string name="FullName">FullName</string>
+    <string name="Email">Email</string>
+    <string name="SelectBirthdate">Select Birthdate</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Save">Save</string>
+    <string name="skip">Skip</string>
+    <string name="numValue">0</string>
+    <string name="level">Level :</string>
+    <string name="score">Score :</string>
+    <string name="puzzle">Puzzles :</string>
+    <string name="sounds">Sounds</string>
+    <string name="Music">Music</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="new_play">new Play</string>
+    <string name="True">True</string>
+    <string name="False">False</string>
+    <string name="EnterTheAnswer">Enter The Answer</string>
+    <string name="Check">Check</string>
+    <string name="Edit">Edit</string>
+    <string name="PointsNeeded">Points Needed :</string>
+    <string name="Rate">Rate</string>
+    <string name="turnon">Turn on</string>
+    <string name="turnoff">Turn off</string>
+
+    <string-array name="Country">
+        <item>Palestine</item>
+        <item>Egypt</item>
+        <item>Sudan</item>
+        <item>Saudi Arabia</item>
+        <item>Tunisia</item>
+        <item>Somalia</item>
+        <item>Algeria</item>
+        <item>Morocco</item>
+        <item>Iraq</item>
+        <item>Syria</item>
+        <item>Yemen</item>
+        <item>Libya</item>
+        <item>Jordan</item>
+        <item>Lebanon</item>
+        <item>Emirates</item>
+        <item>Kuwait</item>
+        <item>Qatar</item>
+    </string-array>
+
+
+</resources>

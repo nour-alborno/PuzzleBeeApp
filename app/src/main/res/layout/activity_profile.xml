@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfileActivity"
+    android:orientation="vertical">
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Edit"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="#15AAED"
+        android:id="@+id/BtnEdit"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/FullName"
+        android:padding="@dimen/_4sdp"
+        android:textColorHint="@color/black"
+        app:counterEnabled="true"
+
+>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:fontFamily="casual"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:padding="@dimen/_4sdp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Email"
+        android:padding="@dimen/_4sdp"
+        android:textColorHint="@color/black"
+        app:counterEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:fontFamily="casual"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            tools:ignore="TouchTargetSizeCheck"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Et_DB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:ems="1"
+        android:hint="@string/SelectBirthdate"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/RgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Et_DB"
+        >
+
+        <RadioButton
+            android:id="@+id/Rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:checked="true"
+            android:text="@string/Male"
+            android:textColor="@color/black"
+            android:gravity="start|center"
+            android:layout_marginEnd="@dimen/_20sdp"
+
+
+            />
+
+        <RadioButton
+            android:id="@+id/Rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/Female"
+            android:textColor="@color/black"
+            android:gravity="end|center"
+             />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/SpCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:entries="@array/Country"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:padding="@dimen/_12sdp"
+
+        tools:ignore="TouchTargetSizeCheck" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Save"
+    android:id="@+id/BtnSave"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/orange"
+    />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/RV"
+     />
+
+</LinearLayout>
